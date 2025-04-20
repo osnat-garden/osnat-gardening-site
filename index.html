@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>הגינה של נועה</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5fff2;
+      color: #2e4a2f;
+    }
+    header {
+      background-color: #81c784;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #66bb6a;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 20px;
+    }
+    h2 {
+      border-bottom: 2px solid #81c784;
+      padding-bottom: 5px;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 400px;
+      margin: 10px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+    }
+    .recommendation {
+      background-color: #e8f5e9;
+      border-radius: 10px;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    form input, form textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px;
+    }
+    form button {
+      background-color: #66bb6a;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>הגינה של נועה</h1>
+    <p>עיצוב, תחזוקה וטיפוח של גינות לבתים ובתי ספר</p>
+  </header>
+  <nav>
+    <a href="#home">דף הבית</a>
+    <a href="#gallery">לפני ואחרי</a>
+    <a href="#reviews">המלצות</a>
+    <a href="#contact">צור קשר</a>
+  </nav>
+
+  <section id="home">
+    <h2>ברוכה הבאה</h2>
+    <p>אני נועה, מומחית לגינון לבתים פרטיים ובתי ספר. באתר תמצאו דוגמאות לעבודות שעשיתי, המלצות מלקוחות ודרך פשוטה ליצור קשר.</p>
+  </section>
+
+  <section id="gallery">
+    <h2>לפני ואחרי</h2>
+    <div class="gallery">
+      <img src="before1.jpg" alt="לפני">
+      <img src="after1.jpg" alt="אחרי">
+      <img src="before2.jpg" alt="לפני">
+      <img src="after2.jpg" alt="אחרי">
+    </div>
+  </section>
+
+  <section id="reviews">
+    <h2>המלצות</h2>
+    <div class="recommendation">
+      <p><strong>רוני מ. – חיפה</strong><br>"נועה עיצבה לי מחדש את הגינה והפכה אותה לגן עדן קטן. הכל נעשה ברוגע, עם הקשבה, והתוצאה פשוט מדהימה."</p>
+    </div>
+    <div class="recommendation">
+      <p><strong>שירה ב. – טבעון</strong><br>"העבודה של נועה עם הילדים בבית הספר הייתה מדהימה. היא לימדה אותם לשתול, להשקות, ואפילו להתרגש מהצמחים!"</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>צור קשר</h2>
+    <p>מלאי את הפרטים ואחזור אליך בהקדם:</p>
+    <form>
+      <input type="text" placeholder="שם מלא" required>
+      <input type="tel" placeholder="טלפון" required>
+      <textarea placeholder="מה תרצי לשתול או לשפר בגינה?" rows="4"></textarea>
+      <button type="submit">שליחה</button>
+    </form>
+  </section>
+</body>
+</html>
