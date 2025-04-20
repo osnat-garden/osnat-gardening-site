@@ -13,18 +13,12 @@
       color: #2e4a2f;
     }
     header {
-    <header style="background-image: url('https://images.unsplash.com/photo-1558981000-5e8eea6f7d82?auto=format&fit=crop&w=1470&q=80'); background-size: cover; background-position: center; color: white; padding: 40px 20px; text-align: center;">
-  <h1 style="background-color: rgba(0, 0, 0, 0.5); display: inline-block; padding: 10px 20px; border-radius: 10px;">
-    הגינה של אסנת
-  </h1>
-  <p style="background-color: rgba(0, 0, 0, 0.5); display: inline-block; padding: 5px 15px; border-radius: 10px; margin-top: 10px;">
-     עיצוב, תחזוקה, ייעוץ וטיפוח של גינות לבתים בתי ספר וארגונים 
-  </p>
-  <p style="margin-top: 20px; font-weight: bold;">
-    📞 052-7076153 | 📍 מעלה גמלא, ישראל
-  </p>
-</header>
-
+      background-image: url('https://images.unsplash.com/photo-1558981000-5e8eea6f7d82?auto=format&fit=crop&w=1470&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
     }
     nav {
       background-color: #66bb6a;
@@ -45,10 +39,17 @@
       border-bottom: 2px solid #81c784;
       padding-bottom: 5px;
     }
-    .gallery img {
-      width: 100%;
-      max-width: 400px;
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .gallery-item {
       margin: 10px;
+      text-align: center;
+    }
+    .gallery-item img {
+      width: 300px;
       border: 2px solid #ccc;
       border-radius: 10px;
     }
@@ -77,32 +78,41 @@
 </head>
 <body>
   <header>
-    <h1>הגינה של אסנת</h1>
-    <p>עיצוב, תחזוקה וטיפוח של גינות לבתים ובתי ספר</p>
+    <h1 style="background-color: rgba(0, 0, 0, 0.5); display: inline-block; padding: 10px 20px; border-radius: 10px;">
+      הגינה של אסנת
+    </h1>
+    <p style="background-color: rgba(0, 0, 0, 0.5); display: inline-block; padding: 5px 15px; border-radius: 10px; margin-top: 10px;">
+      עיצוב, תחזוקה, ייעוץ וטיפוח של גינות לבתים, בתי ספר וארגונים
+    </p>
+    <p style="margin-top: 20px; font-weight: bold;">
+      📞 052-7076153 | 📍 מעלה גמלא, ישראל
+    </p>
+    <p style="margin-top: 15px;">
+      <a href="https://wa.me/972527076153" target="_blank" style="color: white; text-decoration: underline; font-weight: bold;">
+        לחצי כאן ליצירת קשר בוואטסאפ 📲
+      </a>
+    </p>
   </header>
-  <nav>
-    <a href="#home">דף הבית</a>
-    <a href="#gallery">לפני ואחרי</a>
-    <a href="#reviews">המלצות</a>
-    <a href="#contact">צור קשר</a>
-  </nav>
 
-  <section id="home">
-    <h2>ברוכה הבאה</h2>
-    <p>אני אסנת, מומחית לגינון לבתים פרטיים ובתי ספר. באתר תמצאו דוגמאות לעבודות שעשיתי, המלצות מלקוחות ודרך פשוטה ליצור קשר.</p>
-  </section>
-
-  <section id="gallery">
-    <h2>לפני ואחרי</h2>
+  <section>
+    <h2>גלריה</h2>
     <div class="gallery">
-      <img src="before1.jpg" alt="לפני">
-      <img src="after1.jpg" alt="אחרי">
-      <img src="before2.jpg" alt="לפני">
-      <img src="after2.jpg" alt="אחרי">
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1588854337113-f77c0e3d3e2f?auto=format&fit=crop&w=600&q=80" alt="גינה פרטית">
+        <p>גינה פרטית בעיצוב טבעי</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1618221440575-9efc849da90b?auto=format&fit=crop&w=600&q=80" alt="חצר בית ספר">
+        <p>פינת ישיבה בבית ספר</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1597764699514-eacd8b63f1b3?auto=format&fit=crop&w=600&q=80" alt="ערוגות ירק">
+        <p>ערוגות ירק קהילתיות</p>
+      </div>
     </div>
   </section>
 
-  <section id="reviews">
+  <section>
     <h2>המלצות</h2>
     <div class="recommendation">
       <p><strong>רוני מ. – חיפה</strong><br>"אסנת עיצבה לי מחדש את הגינה והפכה אותה לגן עדן קטן. הכל נעשה ברוגע, עם הקשבה, והתוצאה פשוט מדהימה."</p>
@@ -110,17 +120,12 @@
     <div class="recommendation">
       <p><strong>שירה ב. – טבעון</strong><br>"העבודה של אסנת עם הילדים בבית הספר הייתה מדהימה. היא לימדה אותם לשתול, להשקות, ואפילו להתרגש מהצמחים!"</p>
     </div>
-  </section>
-
-  <section id="contact">
-    <h2>צור קשר</h2>
-    <p>מלאי את הפרטים ואחזור אליך בהקדם:</p>
-    <form>
-      <input type="text" placeholder="שם מלא" required>
-      <input type="tel" placeholder="טלפון" required>
-      <textarea placeholder="מה תרצי לשתול או לשפר בגינה?" rows="4"></textarea>
-      <button type="submit">שליחה</button>
-    </form>
+    <div class="recommendation">
+      <p><strong>יוסי כ. – רמת הגולן</strong><br>"אסנת מקצועית, מסורה, והביאה איתה רעיונות שלא חשבנו עליהם. אנחנו נהנים מהגינה כל יום מחדש!"</p>
+    </div>
+    <div class="recommendation">
+      <p><strong>טל ש. – מבשרת</strong><br>"מהרגע הראשון הרגשנו בידיים טובות. התוצאה הסופית עלתה על כל הציפיות שלנו."</p>
+    </div>
   </section>
 </body>
 </html>
